@@ -21,19 +21,14 @@ export class AppComponent {
   ];
 
   listFilter: any = '0'; // Default filter: show all items
-  newWishText = ''; // Text input for new wish item
-  title = 'angular_Wishlist'; // Title of the app
+
+  title = 'angular_v13_Project'; // Title of the app
 
   // Getter to return filtered items based on the selected filter
   get visibleItems(): WishItem[] {
     return this.items.filter(filters[this.listFilter]);
   }
 
-  // Method to add a new wish item to the list
-  addNewWish() {
-    this.items.push(new WishItem(this.newWishText));
-    this.newWishText = ''; // Clear the input field after adding
-  }
 
   // Method to toggle the completion status of an item
   toggleItem(item: WishItem) {

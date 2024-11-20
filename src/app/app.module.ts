@@ -8,7 +8,8 @@ import { AddWishFormComponent } from './add-wish-form/add-wish-form.component'; 
 @NgModule({
   declarations: [
     AppComponent, // Declare the AppComponent here
-    WishListComponent, AddWishFormComponent, // Declare WishListComponent here
+    WishListComponent,
+    AddWishFormComponent, // Declare WishListComponent here
   ],
   imports: [
     BrowserModule, // BrowserModule is required for all applications
