@@ -7,11 +7,11 @@ import { WishItem } from '../../shared/modules/wishItem'; // Import the WishItem
   styleUrls: ['./wish-list.component.css']
 })
 export class WishListComponent {
-  @Input() items: WishItem[] = []; // Input for the array of WishItems
+  @Input() wishes: WishItem[] = []; // Input for the array of WishItems
 
   // Computed property to get visible items
   get visibleItems(): WishItem[] {
-    return this.items; // You can modify this to apply any filtering logic
+    return this.wishes; // You can modify this to apply any filtering logic
   }
 
   // Method to handle item toggling
