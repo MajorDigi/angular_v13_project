@@ -1,18 +1,19 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser'; // BrowserModule is needed for the app to run in a browser
+import { FormsModule } from '@angular/forms'; // Import FormsModule for ngModel
+import { AppComponent } from './app.component'; // Import AppComponent
+import { WishListComponent } from './wish-list/wish-list.component'; // Import your custom component
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, // Declare the AppComponent here
+    WishListComponent, // Declare WishListComponent here
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, // BrowserModule is required for all applications
+    FormsModule, // Include FormsModule for two-way data binding
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent], // Bootstrap the AppComponent
 })
-export class AppModule { }
+export class AppModule {}
